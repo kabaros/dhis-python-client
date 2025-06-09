@@ -1,0 +1,29 @@
+from enum import Enum
+
+
+class ProgramRuleDeleteCollectionItemsJsondeleteCollectionItemsXmlProperty(str, Enum):
+    ACCESS = "access"
+    ATTRIBUTEVALUES = "attributeValues"
+    CODE = "code"
+    CONDITION = "condition"
+    CREATED = "created"
+    CREATEDBY = "createdBy"
+    DESCRIPTION = "description"
+    DISPLAYNAME = "displayName"
+    FAVORITE = "favorite"
+    FAVORITES = "favorites"
+    HREF = "href"
+    ID = "id"
+    LASTUPDATED = "lastUpdated"
+    LASTUPDATEDBY = "lastUpdatedBy"
+    NAME = "name"
+    PRIORITY = "priority"
+    PROGRAM = "program"
+    PROGRAMRULEACTIONS = "programRuleActions"
+    PROGRAMSTAGE = "programStage"
+    SHARING = "sharing"
+    TRANSLATIONS = "translations"
+    USER = "user"
+
+    def __str__(self) -> str:
+        return str(self.value)

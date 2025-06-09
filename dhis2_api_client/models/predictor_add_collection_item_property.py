@@ -1,0 +1,40 @@
+from enum import Enum
+
+
+class PredictorAddCollectionItemProperty(str, Enum):
+    ACCESS = "access"
+    ANNUALSAMPLECOUNT = "annualSampleCount"
+    ATTRIBUTEVALUES = "attributeValues"
+    CODE = "code"
+    CREATED = "created"
+    CREATEDBY = "createdBy"
+    DESCRIPTION = "description"
+    DISPLAYDESCRIPTION = "displayDescription"
+    DISPLAYFORMNAME = "displayFormName"
+    DISPLAYNAME = "displayName"
+    DISPLAYSHORTNAME = "displayShortName"
+    FAVORITE = "favorite"
+    FAVORITES = "favorites"
+    FORMNAME = "formName"
+    GENERATOR = "generator"
+    HREF = "href"
+    ID = "id"
+    LASTUPDATED = "lastUpdated"
+    LASTUPDATEDBY = "lastUpdatedBy"
+    NAME = "name"
+    ORGANISATIONUNITDESCENDANTS = "organisationUnitDescendants"
+    ORGANISATIONUNITLEVELS = "organisationUnitLevels"
+    OUTPUT = "output"
+    OUTPUTCOMBO = "outputCombo"
+    PERIODTYPE = "periodType"
+    PREDICTORGROUPS = "predictorGroups"
+    SAMPLESKIPTEST = "sampleSkipTest"
+    SEQUENTIALSAMPLECOUNT = "sequentialSampleCount"
+    SEQUENTIALSKIPCOUNT = "sequentialSkipCount"
+    SHARING = "sharing"
+    SHORTNAME = "shortName"
+    TRANSLATIONS = "translations"
+    USER = "user"
+
+    def __str__(self) -> str:
+        return str(self.value)

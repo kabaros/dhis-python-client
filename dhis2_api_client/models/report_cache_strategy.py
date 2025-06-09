@@ -1,0 +1,17 @@
+from enum import Enum
+
+
+class ReportCacheStrategy(str, Enum):
+    CACHE_10_MINUTES = "CACHE_10_MINUTES"
+    CACHE_15_MINUTES = "CACHE_15_MINUTES"
+    CACHE_1_HOUR = "CACHE_1_HOUR"
+    CACHE_1_MINUTE = "CACHE_1_MINUTE"
+    CACHE_30_MINUTES = "CACHE_30_MINUTES"
+    CACHE_5_MINUTES = "CACHE_5_MINUTES"
+    CACHE_6AM_TOMORROW = "CACHE_6AM_TOMORROW"
+    CACHE_TWO_WEEKS = "CACHE_TWO_WEEKS"
+    NO_CACHE = "NO_CACHE"
+    RESPECT_SYSTEM_SETTING = "RESPECT_SYSTEM_SETTING"
+
+    def __str__(self) -> str:
+        return str(self.value)

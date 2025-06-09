@@ -1,0 +1,43 @@
+from enum import Enum
+
+
+class PropertyNamesDashboardItem(str, Enum):
+    ACCESS = "access"
+    APPKEY = "appKey"
+    ATTRIBUTEVALUES = "attributeValues"
+    CODE = "code"
+    CONTENTCOUNT = "contentCount"
+    CREATED = "created"
+    CREATEDBY = "createdBy"
+    DISPLAYNAME = "displayName"
+    EVENTCHART = "eventChart"
+    EVENTREPORT = "eventReport"
+    EVENTVISUALIZATION = "eventVisualization"
+    FAVORITE = "favorite"
+    FAVORITES = "favorites"
+    HEIGHT = "height"
+    HREF = "href"
+    ID = "id"
+    INTERPRETATIONCOUNT = "interpretationCount"
+    INTERPRETATIONLIKECOUNT = "interpretationLikeCount"
+    LASTUPDATED = "lastUpdated"
+    LASTUPDATEDBY = "lastUpdatedBy"
+    MAP = "map"
+    MESSAGES = "messages"
+    NAME = "name"
+    REPORTS = "reports"
+    RESOURCES = "resources"
+    SHAPE = "shape"
+    SHARING = "sharing"
+    TEXT = "text"
+    TRANSLATIONS = "translations"
+    TYPE = "type"
+    USER = "user"
+    USERS = "users"
+    VISUALIZATION = "visualization"
+    WIDTH = "width"
+    X = "x"
+    Y = "y"
+
+    def __str__(self) -> str:
+        return str(self.value)

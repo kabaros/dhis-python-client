@@ -1,0 +1,42 @@
+from enum import Enum
+
+
+class CategoryOptionGetObjectPropertyProperty(str, Enum):
+    ACCESS = "access"
+    AGGREGATIONTYPE = "aggregationType"
+    ATTRIBUTEVALUES = "attributeValues"
+    CATEGORIES = "categories"
+    CATEGORYOPTIONCOMBOS = "categoryOptionCombos"
+    CATEGORYOPTIONGROUPS = "categoryOptionGroups"
+    CODE = "code"
+    CREATED = "created"
+    CREATEDBY = "createdBy"
+    DESCRIPTION = "description"
+    DIMENSIONITEM = "dimensionItem"
+    DISPLAYDESCRIPTION = "displayDescription"
+    DISPLAYFORMNAME = "displayFormName"
+    DISPLAYNAME = "displayName"
+    DISPLAYSHORTNAME = "displayShortName"
+    ENDDATE = "endDate"
+    FAVORITE = "favorite"
+    FAVORITES = "favorites"
+    FORMNAME = "formName"
+    HREF = "href"
+    ID = "id"
+    ISDEFAULT = "isDefault"
+    LASTUPDATED = "lastUpdated"
+    LASTUPDATEDBY = "lastUpdatedBy"
+    LEGENDSET = "legendSet"
+    LEGENDSETS = "legendSets"
+    NAME = "name"
+    ORGANISATIONUNITS = "organisationUnits"
+    QUERYMODS = "queryMods"
+    SHARING = "sharing"
+    SHORTNAME = "shortName"
+    STARTDATE = "startDate"
+    STYLE = "style"
+    TRANSLATIONS = "translations"
+    USER = "user"
+
+    def __str__(self) -> str:
+        return str(self.value)

@@ -1,0 +1,40 @@
+from enum import Enum
+
+
+class SmsCommandAddCollectionItemProperty(str, Enum):
+    ACCESS = "access"
+    ATTRIBUTEVALUES = "attributeValues"
+    CODE = "code"
+    CODEVALUESEPARATOR = "codeValueSeparator"
+    COMPLETENESSMETHOD = "completenessMethod"
+    CREATED = "created"
+    CREATEDBY = "createdBy"
+    CURRENTPERIODUSEDFORREPORTING = "currentPeriodUsedForReporting"
+    DATASET = "dataset"
+    DEFAULTMESSAGE = "defaultMessage"
+    DISPLAYNAME = "displayName"
+    FAVORITE = "favorite"
+    FAVORITES = "favorites"
+    HREF = "href"
+    ID = "id"
+    LASTUPDATED = "lastUpdated"
+    LASTUPDATEDBY = "lastUpdatedBy"
+    MORETHANONEORGUNITMESSAGE = "moreThanOneOrgUnitMessage"
+    NAME = "name"
+    NOUSERMESSAGE = "noUserMessage"
+    PARSERTYPE = "parserType"
+    PROGRAM = "program"
+    PROGRAMSTAGE = "programStage"
+    RECEIVEDMESSAGE = "receivedMessage"
+    SEPARATOR = "separator"
+    SHARING = "sharing"
+    SMSCODES = "smsCodes"
+    SPECIALCHARACTERS = "specialCharacters"
+    SUCCESSMESSAGE = "successMessage"
+    TRANSLATIONS = "translations"
+    USER = "user"
+    USERGROUP = "userGroup"
+    WRONGFORMATMESSAGE = "wrongFormatMessage"
+
+    def __str__(self) -> str:
+        return str(self.value)

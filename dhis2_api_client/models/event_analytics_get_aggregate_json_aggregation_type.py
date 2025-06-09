@@ -1,0 +1,28 @@
+from enum import Enum
+
+
+class EventAnalyticsGetAggregateJsonAggregationType(str, Enum):
+    AVERAGE = "AVERAGE"
+    AVERAGE_SUM_ORG_UNIT = "AVERAGE_SUM_ORG_UNIT"
+    COUNT = "COUNT"
+    CUSTOM = "CUSTOM"
+    DEFAULT = "DEFAULT"
+    FIRST = "FIRST"
+    FIRST_AVERAGE_ORG_UNIT = "FIRST_AVERAGE_ORG_UNIT"
+    FIRST_FIRST_ORG_UNIT = "FIRST_FIRST_ORG_UNIT"
+    LAST = "LAST"
+    LAST_AVERAGE_ORG_UNIT = "LAST_AVERAGE_ORG_UNIT"
+    LAST_IN_PERIOD = "LAST_IN_PERIOD"
+    LAST_IN_PERIOD_AVERAGE_ORG_UNIT = "LAST_IN_PERIOD_AVERAGE_ORG_UNIT"
+    LAST_LAST_ORG_UNIT = "LAST_LAST_ORG_UNIT"
+    MAX = "MAX"
+    MAX_SUM_ORG_UNIT = "MAX_SUM_ORG_UNIT"
+    MIN = "MIN"
+    MIN_SUM_ORG_UNIT = "MIN_SUM_ORG_UNIT"
+    NONE = "NONE"
+    STDDEV = "STDDEV"
+    SUM = "SUM"
+    VARIANCE = "VARIANCE"
+
+    def __str__(self) -> str:
+        return str(self.value)

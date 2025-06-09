@@ -1,0 +1,40 @@
+from enum import Enum
+
+
+class OrganisationUnitGroupAddCollectionItemProperty(str, Enum):
+    ACCESS = "access"
+    AGGREGATIONTYPE = "aggregationType"
+    ATTRIBUTEVALUES = "attributeValues"
+    CODE = "code"
+    COLOR = "color"
+    CREATED = "created"
+    CREATEDBY = "createdBy"
+    DESCRIPTION = "description"
+    DIMENSIONITEM = "dimensionItem"
+    DISPLAYDESCRIPTION = "displayDescription"
+    DISPLAYFORMNAME = "displayFormName"
+    DISPLAYNAME = "displayName"
+    DISPLAYSHORTNAME = "displayShortName"
+    FAVORITE = "favorite"
+    FAVORITES = "favorites"
+    FEATURETYPE = "featureType"
+    FORMNAME = "formName"
+    GEOMETRY = "geometry"
+    GROUPSETS = "groupSets"
+    HREF = "href"
+    ID = "id"
+    LASTUPDATED = "lastUpdated"
+    LASTUPDATEDBY = "lastUpdatedBy"
+    LEGENDSET = "legendSet"
+    LEGENDSETS = "legendSets"
+    NAME = "name"
+    ORGANISATIONUNITS = "organisationUnits"
+    QUERYMODS = "queryMods"
+    SHARING = "sharing"
+    SHORTNAME = "shortName"
+    SYMBOL = "symbol"
+    TRANSLATIONS = "translations"
+    USER = "user"
+
+    def __str__(self) -> str:
+        return str(self.value)

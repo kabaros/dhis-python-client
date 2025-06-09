@@ -1,0 +1,11 @@
+from enum import Enum
+
+
+class AnalyticsPeriodBoundaryAnalyticsPeriodBoundaryType(str, Enum):
+    AFTER_END_OF_REPORTING_PERIOD = "AFTER_END_OF_REPORTING_PERIOD"
+    AFTER_START_OF_REPORTING_PERIOD = "AFTER_START_OF_REPORTING_PERIOD"
+    BEFORE_END_OF_REPORTING_PERIOD = "BEFORE_END_OF_REPORTING_PERIOD"
+    BEFORE_START_OF_REPORTING_PERIOD = "BEFORE_START_OF_REPORTING_PERIOD"
+
+    def __str__(self) -> str:
+        return str(self.value)
