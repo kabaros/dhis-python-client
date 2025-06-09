@@ -1,5 +1,12 @@
 # dhis2-api-client
-A client library for accessing DHIS2 API
+This repo shows a python client automatically generated from [DHIS2 OpenAPI specs](https://docs.dhis2.org/en/develop/core-openapi-specification.html), and being used in a Jupyter notebook to access the API using a strongly-typed interface.
+
+[python_client.webm](https://github.com/user-attachments/assets/4058fe6e-9926-4d06-b720-f8c21133a581)
+
+The client is generated using [openapi-python-client](https://github.com/openapi-generators/openapi-python-client).
+
+> [!WARNING]  
+> This is a proof of concept. There are probably several things needed to make it production-ready, like using custom templates to generate a more intuitive API etc... 
 
 ## Usage
 First, create a client:
